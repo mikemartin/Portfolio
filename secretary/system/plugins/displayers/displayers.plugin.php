@@ -7,7 +7,9 @@
 		$defaults= array(
 			'One by One'	=>	"one-by-one",
 			'Slideshow'		=>	"slideshow",
-			'Pop'			=>	"pop"
+			'Pop'			=>	"pop",
+			'PrettyPhoto'	=>	"prettyphoto"
+			
 		);
 		
 		$final= array_merge( $defaults, $displayers );
