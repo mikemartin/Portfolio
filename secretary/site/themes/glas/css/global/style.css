@@ -1,0 +1,273 @@
+@import "reset.css";
+@import "type.css";
+@import "forms.css";
+
+
+/* Type colors
+
+Headings - #b7c9d2
+Body - #7695a5
+Muted - #647781
+Links - #c8d7de
+Hover - #FFF
+
+*/
+
+
+body { 
+	/*background: #293644;*/
+	background: #011f2f url(bluebg.png) top center no-repeat;
+	color: #7695a5;
+}
+
+nav a {
+	color: #7695a5;
+}
+
+
+.date, .details, #footer { 
+	color: #647781;
+}
+
+
+h2, h3, h4, #subtitle, nav {
+	color: #b7c9d2;
+}
+
+h1 {
+	color: #FFF;
+}
+
+a {
+	color: #c8d7de;
+}
+
+a:hover {
+	color: #FFF;
+} 
+
+
+
+::selection {
+        background: #9c6;
+        color: #fff; /* Safari */
+        }
+::-moz-selection {
+        background: #9c6;
+        color: #fff; /* Firefox */
+}
+
+.fr_loading {
+	display: none;
+}
+
+#wrapper {
+	width: 1020px;
+	/*min-width: 768px;*/
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+} 
+
+#header {
+	height: 90px;
+	margin-top: 40px;
+}
+
+#header h1 {
+	position: absolute;
+	height: 90px;
+	width: 220px;
+	background: url(logo.png) transparent no-repeat;
+}
+
+#header h1:hover {
+	background-image: url(logo-on.png);
+}
+
+#header h1 span {
+	display: none;
+}
+
+#header #subtitle {
+	/*color: #39C;*/
+	float: right;
+	/*text-transform: lowercase;*/
+	font-size: 16px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1B2936), color-stop(1, #013855)); 
+	background-image: -moz-linear-gradient(top, #1B2936, #013855);
+	padding: 2px 10px;
+	margin-bottom: 17px;
+}
+
+
+
+#header #subtitle em {
+	color: #39c;
+	font-style: normal;
+}
+
+#header #subtitle b {
+	color: #9c6;
+	font-weight: normal;
+}
+
+
+
+#header nav {
+	float: right;
+}
+
+#header nav li {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+}
+
+#header nav a {
+	padding: 10px;
+}
+
+nav a {
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}	
+
+nav .active a, nav .active a:hover {
+	color: #FFFFFF;
+	background-color: #669933;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #99cc66), color-stop(1, #669933));
+	background-image: -moz-linear-gradient(top, #99cc66, #669933);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}	
+
+nav a:hover {
+	background-color: #013855;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1B2936), color-stop(1, #013855)); 
+	background-image: -moz-linear-gradient(top, #1B2936, #013855);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}	
+
+
+
+
+
+
+.clear { clear: both;}
+
+aside { width: 250px; float: left; /*background: #000;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding: 10px;*/
+}
+
+
+aside nav { width: 200px; }
+/*#content {
+	margin: auto;
+	margin-top: 30px; 
+}
+*/
+
+#content {
+	width: 956px;
+	/*min-width: 704px;*/
+	margin: auto;
+	margin-top: 30px;
+	}
+	
+.main-content, .projects {
+	width: 666px; 
+	/*min-width: 100px;*/
+	float: left;
+	background-color: #011f2f;
+	background: rgba(0, 0, 0, 0.1);
+	
+	padding: 20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.projects { padding-right: 0px; width: 686px;}
+
+.main-content {
+
+	margin-left: 70px;
+	width: 596px;
+}
+
+
+#content .samples {
+	float: right;
+	margin-left: 60px;
+	width: 380px;
+
+}
+
+#content .samples .project-link {
+	border: 5px solid #647781; 
+	width: 100px;
+	height: 100px;
+	margin-right: 15px;
+	background: #000;
+}
+
+#content .samples .project-link:hover {
+	border-color: #31b8da;
+}
+
+article h2 { 
+	font-size: 24px; 
+}
+
+article .details { 
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+
+
+.section {
+	text-align: center;
+}
+
+.section p {
+	line-height: 1.25;
+}
+
+
+
+/*h1.clock:before {
+	content: url(clock.png) " ";
+	
+}
+*/
+
+h1.icon {
+	padding-left: 42px;
+	background-repeat: no-repeat;
+	background-position-y: 5px;
+}
+h1.about {
+  background-image: url(about.png);
+}
+
+h1.portfolio {
+  background-image: url(portfolio.png);
+}
+
+h1.timeline {
+  background-image: url(timeline.png);
+}
+
+h1.hello {
+  background-image: url(hello.png); 
+}
+
+

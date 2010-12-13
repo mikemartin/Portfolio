@@ -1,0 +1,116 @@
+.resume {
+position: absolute;
+top: 14px;
+right: 0px;
+width: 180px;
+}
+
+.section {
+	position: relative;
+}
+#timeline-menu {
+	height: 250px; 
+	width: 99%;
+	overflow:hidden;
+	margin: auto;
+	border: 5px solid #647781;
+	margin-top: 30px;
+	background: #000;
+	}
+
+
+
+#timeline-menu:hover {
+	border-color: #31b8da;
+	}
+	
+		
+.fade-overlay {
+	height: 250px; 
+	width: 956px;
+	background: url(fadetoblack.png) repeat-y;
+	z-index: 5;
+	position: absolute;
+}	
+
+#scroller {
+	height: 250px;
+	width: 2160px;
+	background: #1d2e3b url(20x18_websafe.png);
+	position: relative;
+	overflow:hidden;
+	/*cursor:move;*/
+	/*cursor:-moz-grabbing;*/
+	/*cursor: url(openhand.cur), default !important;*/
+}
+.event {
+	height: 40px; /* +10 padding = 54 */
+	padding: 5px 0px 5px /*2*/0px;
+	/*width: 980px;*/ /* +20 padding = 620 */
+	/*fallback (Opera) */
+	background-color: #006699;
+	/* Chrome, Safari:*/
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #0099CC), color-stop(1, #006699));
+	 /* Mozilla: */
+    background-image: -moz-linear-gradient(top, #0099CC, #006699);
+    /* MSIE */
+    /*filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0099CC', EndColorStr='#006699', GradientType=1);*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 18px 0 0 0;
+	color: #ccffff;
+	font-size: 13px;
+	line-height: 13px;
+	text-decoration: none;
+	padding-top: 6px;
+	padding-left: 10px;
+	border: 1px solid #0099CC;
+	margin-left: 1px;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	-moz-box-shadow: 0px 0px 5px #000000;
+
+	position: absolute;
+}
+
+.event:hover, .active .event {
+	background-color: #669933;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #99cc66), color-stop(1, #669933));
+	background-image: -moz-linear-gradient(top, #99cc66, #669933);
+	COLOR: #F0FFD6;
+	border-color: #99cc66;
+}
+
+
+.event .title, .event .event-date {
+	/*margin-left: 9px;*/
+}
+
+.event .event-date {
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* Position Adjustments */
+.event.num3, .event.num5 { margin-left: -20px; }
+.event.num4, .event.num5 { width: 70px !important; }
+.event.num6 { top: 140px !important; }
+
+
+#menu {
+	z-index: 4;
+}
+
+.years {
+	z-index: 1;
+	position: absolute;
+	top: 230px;
+}
+.years li { 
+	width: 230px; 
+	padding-left: 10px;
+	text-align: left;
+	font-size: 14px;
+	color: #647781;
+	float: left;
+}

@@ -1,0 +1,170 @@
+@import "global/style.css";
+
+.hidden { display: none; }
+
+
+.debug {
+	font-size : .75em; /* 12 / 16 = .75 */ 
+	background: #011f2f;
+	border: 1px solid #013855;
+	color: #9c6;
+	font-family: sans-serif;
+	padding: 10px;
+	margin-bottom: 10px;
+	display:none;
+}
+
+.debug strong {
+	color: #39c;
+	font-weight: normal;
+}
+.fileGroup .project-link {
+	display: none !important;
+}
+
+
+.fileGroup .project-link:first-child {
+	display: block !important;
+}
+
+.projects .textblock, .samples .textblock {
+	display: none;
+}
+
+#content {
+	/* min-height: 500px; */
+}
+
+
+.resume {
+	font-size: 16px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #1B2936), color-stop(1, #013855)); 
+	background-image: -moz-linear-gradient(top, #1B2936, #013855);
+	float: left;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.resume a {
+	background: url('icons24.png') no-repeat top left;
+	padding-left: 35px;
+	text-decoration: none;
+	line-height: 25px;
+	display: block;
+	text-align: left;
+}
+
+.resume a:hover {
+	background-position-y: bottom;
+}
+
+
+/*
+ * Projects
+ */
+
+.project-link {
+	display: block;
+	float: left;
+	margin: 0 28px 36px 0;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	overflow: hidden;
+	outline: none;
+	/*background-color: #013855;*/
+	/*border-radius: 5px;
+	-moz-border-radius: 5px;*/
+}
+
+.project-link .thumbnail {
+	display: block;
+	/*border: 1px solid #013855;*/
+	-webkit-transition: opacity 0.25s ease;
+	
+	/*padding: 5px;*/
+}
+
+
+
+
+.front_slideshow_image {
+	outline: none;
+}
+
+.project-link .thumbnail:hover, .front_slideshow_image:hover img {
+	background-color: #000000;
+	border-color: #000; 	
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+
+
+.project-info {
+	margin-bottom: 10px;
+}
+
+.project-info h2 {
+	margin-bottom: 0;
+}
+
+.tags {
+	margin-bottom: 5px;
+	width: 240px;
+}
+
+.tags, .tags a {
+	color: #999;
+}
+
+.tags a:hover {
+	color: #EF2400;
+}
+/*
+.fileGroup {
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 680px;
+}
+
+.file {
+	float: left;
+}
+
+.file img {
+	display: block;
+	margin-bottom: 1px;
+	max-width: 680px;
+	height: auto;
+}
+*/
+.textblock {
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 240px;
+}
+
+.slideshow .slideshow-nav {
+	margin-bottom: 5px;
+}
+
+.slideshow .slideshow-nav a, .file .info .title {
+	color: #EF2400;
+}
+
+.slideshow .slideshow-nav, .file .info .caption {
+	color: #999;
+}
+
+.slideshow .slideshow-nav .currentSlide {
+	font-weight: bold;
+}
+
+
+
+
+
+

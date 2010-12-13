@@ -1,0 +1,162 @@
+.message {
+	text-align: center;
+	font-size: 12px;
+	height: 60px;
+	color: #89a;
+	
+}
+
+.message.success {
+	color: #9C6;
+}
+
+form {
+		background-color: #011f2f;
+		background: rgba(0, 0, 0, 0.1);
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-khtml-border-radius: 6px;
+		border-radius: 6px;
+		counter-reset: fieldsets;
+		padding: 20px;
+		width: 400px;
+		margin: auto;
+		}
+		
+		form fieldset {
+			border: none;
+			margin-bottom: 10px;
+			}
+		
+		form fieldset:last-of-type {
+			margin-bottom: 0;
+			}
+			
+			form legend {
+				color: #384313;
+				font-size: 16px;
+				font-weight: bold;
+				padding-bottom: 10px;
+				text-shadow: 0 1px 1px #c0d576;
+				}
+				
+				form > fieldset > legend:before {
+					content: "Step " counter(fieldsets) ": ";
+					counter-increment: fieldsets;
+					}
+				
+				form fieldset fieldset legend {
+					color: #111111;
+					font-size: 13px;
+					font-weight: normal;
+					padding-bottom: 0;
+					}
+			
+			form ol li {
+				/*background: #b9cf6a;
+				background: rgba(255,255,255,.3);
+				border-color: #e3ebc3;
+				border-color: rgba(255,255,255,.6);
+				border-style: solid;
+				border-width: 2px;*/
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				border-radius: 5px;
+				line-height: 30px;
+				list-style: none;
+				padding: 5px 10px;
+				margin-bottom: 2px;
+				}
+							
+				form ol ol li {
+					background: none;
+					border: none;
+					float: left;
+					}
+			
+			form label {
+				float: left;
+				font-size: 13px;
+				width: 110px;
+				}
+				
+			form fieldset fieldset label {
+				background:none no-repeat left 50%;
+				line-height: 20px;
+				padding: 0 0 0 30px;
+				width: auto;
+				}
+					
+				form label[for=visa] {
+					background-image: url(visa.gif);
+					}
+				form label[for=amex] {
+					background-image: url(amex.gif);
+					}
+				form label[for=mastercard] {
+					background-image: url(mastercard.gif);
+					}
+					
+				form fieldset fieldset label:hover {
+					cursor: pointer;
+					}
+				
+			form input:not([type=radio]),
+			form textarea {
+				background: #ffffff;
+				border: none;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-khtml-border-radius: 3px;
+				border-radius: 3px;
+				font: italic 13px Georgia, "Times New Roman", Times, serif;
+				outline: none;
+				padding: 5px;
+				width: 200px;
+				}
+					
+				form input:not([type=submit]):focus,
+				form textarea:focus {
+					background: #eaeaea;
+					}
+					
+				form input[type=radio] {
+					float: left;
+					margin-right: 5px;
+					}
+						
+			form button {
+				background: #384313;
+				border: none;
+				-moz-border-radius: 6px;
+				-webkit-border-radius: 6px;
+				-khtml-border-radius: 6px;
+				border-radius: 6px;
+				color: #ffffff;
+				display: block;
+				font-size: 18px;
+				letter-spacing: 1px;
+				margin: auto;
+				padding: 7px 25px;
+				text-shadow: 0 1px 1px #000000;
+				text-transform: uppercase;
+				
+				border: 1px solid #0099CC;
+				
+				background-color: #006699;
+				/* Chrome, Safari:*/
+				background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #0099CC), color-stop(1, #006699));
+				 /* Mozilla: */
+    			background-image: -moz-linear-gradient(top, #0099CC, #006699);
+				
+				}
+					
+				form button:hover {
+					background-color: #669933;
+					background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #99cc66), color-stop(1, #669933));
+					background-image: -moz-linear-gradient(top, #99cc66, #669933);
+					COLOR: #F0FFD6;
+					border-color: #99cc66;
+					cursor: pointer;
+					}

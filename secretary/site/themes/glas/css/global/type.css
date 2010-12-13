@@ -1,0 +1,97 @@
+
+
+body {
+	/*font: 100%/1.5 "Adobe Garamond Pro", Garamond, "Times New Roman", Times, serif;*/
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: Arial, Verdana, sans-serif;
+	/*background-color: #FFF;
+	color: #222;*/
+	text-shadow: #000 0px 1px 0px;
+}
+
+
+h1, h2, h3, h4, #subtitle, nav, .date, .details, .title, .years {
+	font-family: 'Cantarell', arial, serif;
+}
+
+h1 { letter-spacing: -1px !important; }
+
+h2 a { 
+	text-decoration: none; 
+}
+
+
+#footer p {
+	font-size: .75em;
+	text-align: right;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+
+.text {
+	width: 500px;
+	margin-bottom: 24px;
+	font-size : 1em; /* 16 / 16 = 1 */
+}
+
+.text {
+	border-bottom: dotted 1px #39C; 
+	padding-bottom: 24px;
+}
+
+.date, .details { 
+	font-size : .75em; /* 12 / 16 = .75 */ 
+	margin-top: 12px;
+	margin-bottom: 12px;
+	display: block;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: normal;
+	display: inline;
+	letter-spacing: 1px;
+}
+
+h1.clock {
+  background: url(clock.png) no-repeat 0px 2px;
+  padding-left: 38px;  
+}
+
+
+
+
+h2 {
+	font-size : 1.5em;
+	line-height: 1.2;
+	font-weight: normal;
+}
+
+
+h2 a:hover {
+	text-decoration: underline;
+}
+
+
+#subtitle {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+nav {
+	text-transform: lowercase;
+	line-height: 1em; /* 12 / 16 = .75 */
+	font-size: 1.25em;
+}
+
+
+#header nav {
+	font-size: 1.4em;
+	line-height: .75em;
+}
+
+.text, .page-text, p { font-size: .85em; }
