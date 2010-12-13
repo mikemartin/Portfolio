@@ -1,0 +1,426 @@
+/*
+ Section Tabs
+*/
+#overview #tabHolder {
+	position: relative;
+	float: left;
+	width: 958px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: auto;
+}
+
+#sectionsTabs {
+	float: left;
+	position: relative;
+	width: 10000px;
+	height: 35px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#sectionsTabs li {
+	float: left;
+	margin-top: -1px;
+	margin-left: -1px;
+	width: auto;
+	height: 35px;
+	overflow: visible;
+	background-position: center center;
+	border: 1px solid #ccc;
+}
+
+#sectionsTabs li a {
+	display: block;
+	position: relative;
+	padding: 10px;
+	cursor: move;
+	text-indent: 0;
+}
+
+#sectionsTabs li:hover {
+	background-color: #eee;
+	cursor: move;
+}
+
+.ui-tabs-hide {
+     display: none;
+}
+
+.ui-tabs #sectionsTabs li.ui-state-active {
+	border-bottom: 1px solid #fff;
+}
+
+.ui-tabs #sectionsTabs li.ui-state-active:hover {
+	border-bottom: 1px solid #ccc;
+}
+
+.ui-tabs-panel {
+	float: left;
+	margin-top: 10px;
+}
+
+.ui-tabs #sectionsTabs li.droppableHover {
+	background-color: #FFED87;
+	border-bottom: 1px solid #eee;
+}
+
+/*
+ Other shiz
+*/
+
+#UploadedFiles {
+	float: left;
+	width: 100%;
+}
+
+#UploadedFiles #Containment {
+	float: left;
+	position: relative;
+	padding-top: 10px;
+	width: 100%;
+}
+
+#UploadedFiles #Files {
+	float: left;
+}
+
+.filebox .toolbar a.delete {
+	background: #FFF url('../../../gui/common_images/famfamfam/bin.png') no-repeat;
+}
+
+.filebox .toolbar a.cover {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: transparent url('../../../gui/common_images/famfamfam/star_off.png') no-repeat;
+	cursor: pointer;
+}
+
+.filebox .toolbar a.edit_thumb {
+	background: #FFF url('../../../gui/common_images/famfamfam/images.png') no-repeat;
+}
+
+.filebox.cover .toolbar a.cover, a.cover_on {
+	background: transparent url('../../../gui/common_images/famfamfam/star_on.png') no-repeat;
+}
+
+#UploadedFiles .info {
+	float: left;
+	margin-left: 10px;
+}
+
+#UploadedFiles textarea, #UploadedFiles input[type="text"], .editInPlace {
+	max-width: 500px;
+	min-width: 200px;
+	font-size: 1.2em;
+}
+
+#UploadedFiles .edit_area {
+	margin-top: 2px;
+	font-size: 0.9em;
+	color: #7C7C7C;
+}
+
+#UploadedFiles #Containment .drop_highlight {
+	background-color: #DAEFF7;
+}
+
+.filebox {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 100px;
+	height: 123px;
+}
+
+.filebox ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+			
+.filebox .edit {
+	display: none;
+	padding: 5px;
+	height: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	background-color: #CCC;
+	background-image: none;
+	color: #000;
+}
+
+.filebox:hover .edit, .filebox:hover .edit.active {
+	display: block;
+}
+
+.filebox .edit:hover, .filebox .edit.active {
+	display: block;
+	background: #222;
+	color: #FFF;
+}
+
+.filebox .toolbar li {
+	display: inline;
+	position: relative;
+	float: left;
+	margin-right: 5px;
+}
+
+.filebox .thumbnail {
+	cursor: move;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.filebox .thumbnail .media {
+	display: block;
+	padding: 5px;
+	width: 88px;
+	height: 88px;
+	font-size: 0.9em;
+	border: 1px solid #CCC;
+	background-color: #EEE;
+}
+
+.filebox .toolbar .options {
+	display: none;
+	position: absolute;
+	bottom: 23px;
+	left: 0;
+	padding: 0 0 20px 0;
+	width: 150px;
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	background: #222;
+	z-index: 99;
+}
+
+.filebox .toolbar .options li {
+	position: relative;
+	width: 150px;
+}
+
+.filebox .toolbar .options a {
+	display: block;
+	padding: 7px;
+	border-bottom: 1px solid #555;
+	letter-spacing: 0.05em;
+	color: #FFF;
+	cursor: pointer;
+	outline: none;
+}
+
+.filebox .toolbar .options a:active {
+	background-color: #444;
+}
+
+.filebox .toolbar .options a:hover {
+	background-color: #777;
+	color: #FFF;
+}
+
+#uploader #filelist {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#uploader #filelist div {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+	width: 468px;
+	border-bottom: 1px solid #DDD;
+	overflow: hidden;
+}
+
+.MultiFile-remove {
+	padding: 3px;
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	background-color: #FFD846;
+	color: #000;
+}
+
+.MultiFile-remove:hover {
+	background-color: #000;
+	color: #FFD846;
+}
+
+.MultiFile-title {
+	font-size: 0.9em;
+}
+
+#uploader #filelist .file {
+	font-family: "Andale Mono", "Courier New", Courier, sans-serif;
+}
+
+.sectionProjects .controls {
+	border: none;
+	height: auto;
+}
+
+.sectionProjects .controls ul li {
+	padding: 0;
+	height: auto;
+}
+
+.fileGroup .controls {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.fileGroup {
+	float: left;
+	padding: 0;
+	margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid #CCC;
+}
+
+.textBlock {
+	clear: both;
+	width: 525px;
+}
+
+.textBlock .controls {
+	margin: 0;
+}
+
+#theThumb .delete {
+	display: block;
+	margin-top: 5px;
+}
+
+#theThumb .delete a {
+	position: relative;
+	top: 1px;
+	left: 0;
+	padding: 3px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	outline: 0;
+}
+
+.fileGroup .controls .displayer {
+	border-right: 1px solid #CCC;
+}
+
+.fileGroup .controls .textblockToolbar {
+	border-right: 1px solid #CCC;
+}
+
+.fileGroup .textblock {
+	margin: 0;
+	width: 513px;
+	border: 1px solid #FFF;
+	line-height: 1.6em;
+}
+
+.fileGroup select {
+	display: block;
+	margin: -3px 0 0 0;
+}
+
+.fileGroup .handle {
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+#groupedFiles {
+	margin-top: 20px;
+}
+
+.section .controls {
+	border: 1px solid #CCC;
+}
+
+.section .controls .name {
+	font-weight: bold;
+	border-right: 1px solid #CCC;
+}
+
+.project .handle {
+	display: block;
+	position: relative;
+	margin-bottom: 3px;
+	width: 175px;
+	height: 110px;
+	border: 1px solid #fff;
+	background: #eee url("emptythumb.png") no-repeat center center;
+	overflow: hidden;
+	cursor: move;
+	text-indent: 0px;
+}
+
+.project .handle img {
+	width: 100%;
+	min-height: 110px;
+}
+
+.helper {
+	width: 10px;
+	height: 10px;
+	background: #882AFF;
+	color: #FFF;
+}
+
+.project .title {
+	display: block;
+}
+
+.project a {
+	color: #000;
+}
+
+.project a:hover .title {
+	text-decoration: underline;
+}
+
+.project, .ui-sortable-placeholder {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	width: 175px;
+	height: 140px;
+}
+
+.ui-sortable-placeholder {
+	background: #000;
+}
+
+.ui-sortable-helper .handle img {
+	display: none;
+}
+
+.project:hover .handle {
+	border: 1px solid #ccc;
+}
+
+#waitingRoom .formMessage {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+}
+
+#theThumb {
+	width: 470px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#theThumb img {
+	display: block;
+	max-width: 100%;
+}

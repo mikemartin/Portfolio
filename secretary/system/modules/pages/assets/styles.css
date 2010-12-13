@@ -1,0 +1,35 @@
+#pageList {
+	float: left;
+	clear: both;
+	padding: 0;
+	margin: 10px 0 0 0;
+	width: 100%;
+	list-style: none;
+}
+
+#pageList .item {
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#pageList .controls {
+	border-right-width: 1px;
+}
+
+#pageList .item .title {
+	float: left;
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+#pageList a {
+	display: block;
+	position: relative;
+}
+
+#pageList .handle {
+	margin-top: -3px;
+	margin-right: 10px;
+}

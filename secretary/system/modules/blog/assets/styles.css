@@ -1,0 +1,20 @@
+#list {
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+}
+
+#list li {
+	display: block;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.date select {
+	float: left;
+}
+
+.edit {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
